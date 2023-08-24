@@ -18,7 +18,7 @@ pipeline {
 
 
                 // Run Maven Wrapper Commands
-                sh 'git -version'
+                sh 'git --version'
 
                 echo 'Testing the Project with maven test'
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Package'){
            steps{
             // Run Maven Wrapper Commands
-            sh "git -version"
+            sh "git --version"
            
            }
         }
